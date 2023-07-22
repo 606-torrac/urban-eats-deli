@@ -1,0 +1,839 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 7.25rem;
+}
+
+.button {
+    background-color: #02C3A4;
+    color: #F3F3F3;
+    font-family: Nunito;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #2aa38f;
+    cursor: pointer;
+    color: #F3F3F3;
+    border-color: ;
+}
+
+.see-all-button button:hover,
+.subscribe-form-container button:hover {
+    background-color: #55dac4;
+    cursor: pointer;
+    color: #F3F3F3;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-family: Belleza;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #40374B;
+
+}
+
+/* xxxxxxxxxx Header - Style xxxxxxxxxx */
+
+#header-container {
+    width: 100%;
+    height: 7.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-bottom: 1px solid #d69346;
+}
+
+
+/* == Media Queries == */
+
+@media only screen and (max-width:1600px) {
+    .menu-left a {
+        font-size: 0.5rem;
+    }
+    
+    .nav-bar-right {
+        display: none;
+    }
+}
+
+/* == Media Queries ENDS == */
+
+
+/* == Nav. Bar Left Style == */
+
+.nav-bar-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-end;
+}
+
+.nav-bar-left img {
+    height: 6.5625rem;
+    width: auto;
+    margin: auto;
+
+}
+
+.menu-left li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 0.75rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.1875rem;
+}
+
+.menu-left a {
+    color: #40374B;
+    text-transform: uppercase;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.menu-left a:hover {
+    text-decoration: none;
+    color: #d69346;
+}
+
+/* == Nav. Bar Left Style - END == */
+
+/* == Nav. Bar Center Style == */
+
+#header-container h1 {
+    text-decoration: none;
+    text-align: center;
+    align-self: self-end;
+    padding-bottom: 1.1875rem;
+}
+
+.nooks {
+    color: #02C3A4;
+}
+
+/* == Nav. Bar Center Style END == */
+
+/* == Nav. Bar Right Style == */
+
+.nav-bar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 1.1875rem;
+    width: 25rem;
+}
+
+.nav-bar-right img {
+    height: 1.375rem;
+    width: auto;
+}
+
+.search-bar-container {
+    width: 100%;
+    max-width: 15.625rem;
+    height: 1.75rem;
+    display: inline-flex;
+    margin-left: 0px;
+}
+
+
+.search-bar {
+    color: #40374B;
+    flex-grow: 1;
+    display: flex;
+    width: 12.375rem;
+    border: 1px solid #02C3A4;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 0.2rem
+}
+
+.search-bar-container input[type="search"] {
+    border: none;
+    background: #FBFBFB;
+    margin: 0;
+    padding: 7px 14px 7px 8px;
+    font-size: 12px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.search-bar:focus {
+    background: white;
+    
+}
+
+.nav-bar-right input[type="search"]::placeholder {
+    color: #acacad;
+}
+
+.search-bar button[type="submit"] {
+    text-indent: -90px;
+    width: 1.5rem;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url(/resources/icons/Buttons/Search.svg) no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+
+.cart {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.cart a {
+    margin-left: 0;
+    margin-right: 0.4rem;
+}
+
+.cart h4 {
+    font-family: Nunito;
+    font-weight: 700;
+}
+
+
+/* == Nav. Bar Right Style END == */
+
+/* xxxxxxxxxx Header - Style ENDS xxxxxxxxxx */
+
+
+
+/* xxxxxxxxxx Hero Style xxxxxxxxxx */
+
+#hero-container {
+    background-image: url(images/hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #F3F3F3;
+    width: 100%;
+    height: 36.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* == Hero Headings == */
+
+.hero-headings {
+    background-color: rgba(64, 55, 75, 0.7);
+    border-radius: 4px;
+    width: 48%;
+    height: 30%;
+    padding-left: 3.5rem;
+    color: #f3f3f3;
+    line-height: 5vmin;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    position: relative;   
+}
+
+.hero-headings h6 {
+    font-family: Eczar;
+    font-size: 4.8vmin;
+    /* font-size: 3.125em; */
+    font-weight: 500;
+}
+
+.hero-headings p {
+    font-family: Nunito;
+    font-size: 2.5vmin;
+    font-weight: 300;
+    text-align: right;
+}
+
+
+.shop-now {
+    position: absolute;
+    top: 45%;
+    right: -6%;
+    transform: translate(-45%, 6%);
+    width: 22%;
+    height: 40%;
+    /* width: 12.5rem;
+    height: 4.2rem;     */
+    border: 1px solid #02C3A4;
+    border-radius: 5px;
+    font-size: 140%;
+}
+
+/* == Hero Headings ENDS == */
+
+/* xxxxxxxxxx Hero Style ENDS xxxxxxxxxx */
+
+
+/* xxxxxxxxxx Popular Items Style xxxxxxxxxx */
+
+#pop-items-section {
+    width: 100% ;
+    height: 55rem;
+    margin-top: 6.375rem;
+}
+
+.p-items-headings {
+    height: 9.375rem;
+    width: 100%;
+}
+
+.p-items-headings h1 {
+    text-align: center;
+    padding-top: 3rem;
+    
+}
+
+.p-items-headings h3 {
+    margin-right: 1.5rem;
+    margin-top: 1.5em;
+    text-align: right;
+}
+
+.see-all {
+    font-family: Belleza;
+    font-size: 25px;
+    color: #02C3A4;
+    padding-right: 2rem;
+}
+
+.p-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    padding-bottom: 0;
+}
+
+
+/* == Popular Items Images + Button == */
+
+
+.p-item {
+    position: relative;    
+}
+
+.p-item img {
+    width: 35rem;
+}
+
+.p-item button {
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+    width: 8.5rem;
+    height: 4rem;
+    border: #02C3A4 1px solid;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(64,55,75,0.5);
+    font-size: 22px;
+}
+
+/* == Popular Items Images + Button ENDS == */
+
+/* == Popular Items Name + Price Tag == */
+
+.p-item-name {
+    margin-top: 1.5rem;
+}
+
+.p-item-name a{
+    font-family: Nunito;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin-left: 0;
+    color: #40374B;
+
+}
+
+.p-item-name h4 {
+    text-align: center;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: #02C3A4;
+}
+
+/* == Popular Items Name + Price Tag ENDS == */
+
+/* xxxxxxxxxx Popular Items ENDS xxxxxxxxxx */
+
+
+/* xxxxxxxxxx WHY US Style xxxxxxxxxx */
+
+#why-us-container {
+    height: 30.3125rem;
+    width: 100%;
+    background: linear-gradient(0deg, #F3F3F3 9.44%, rgba(242, 242, 242, 0) 47.71%);
+    box-shadow: 0px 19px 20px -11px rgba(0, 0, 0, 0.15);
+    margin-top: 5rem;
+}
+
+#why-us-container h1 {
+    padding-top: 2.375rem;
+    text-align: center;
+}
+
+/* == WHY US Section == */
+
+.why-us-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+.why-us-images {
+    text-align: center;
+}
+
+.why-us-texts {
+    display: block;
+    text-align: center;
+}
+
+.why-us-texts h2 {
+    text-transform: uppercase;
+    font-family: Nunito;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #02C3A4;
+    padding-top: 2rem;
+}
+
+.why-us-texts h3 {
+    font-family: Nunito;
+    font-size: 1.5625rem;
+    font-weight: 300;
+}
+
+/* xxxxxxxxxx WHY US Style ENDS xxxxxxxxxx */
+
+/* xxxxxxxxxx Products Style Starts xxxxxxxxxx */
+
+#our-products-container {
+    height: 62rem;
+    margin-top: 5.9375rem;
+    padding: 4.4375rem 1.625rem;
+}
+
+.our-products-headings h1 {
+    text-align: center;
+}
+
+/* == Products Categories Starts == */
+
+.categories-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.75rem;
+}
+
+.our-products-headings ul {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 4.25rem;
+}
+
+.our-products-headings li a {
+    font-family: Belleza;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #40374B;
+    padding-right: 2rem;
+}
+
+.our-products-headings h3 {
+    align-self: self-end;
+}
+
+/* == Products Categories ENDS == */
+
+/* == Products Starts == */
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item-content {
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-content img {
+    width: 35rem;
+}
+
+.item-content h4 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.4375rem;
+    text-align: center;
+    background-color: rgba(225,193,113,0.5);
+    font-family: Nunito;
+    font-size: 1.5625rem;
+    letter-spacing: 0.5%;
+    color: #40374B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* == Products ENDS == */
+
+/* == Products See All button  == */
+
+.see-all-button {
+    display: flex;
+    justify-content: center;
+}
+
+.see-all-button button {
+    background-color: #02C3A4;
+    border: 1px solid #02C3A4;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(64,55,75,0.5);
+    width: 10rem;
+    height: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+    
+}
+
+.see-all-button a {
+    font-family: Nunito;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #F3F3F3;
+    text-transform: uppercase;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+
+/* == Products See All button ENDS  == */
+
+/* xxxxxxxxxx Products Style ENDS xxxxxxxxxxx */
+
+
+/* xxxxxxxxxx About Us Starts xxxxxxxxxxx */
+
+#about-us-container {
+    height: 28.625rem;
+    margin: 4rem auto;
+    box-shadow: 0px 11px 10px -8px rgba(93, 89, 114, 0.64);
+    position: relative;
+}
+
+.about-us-bg {
+    background-image: url(/resources/images/about-us-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top center;
+    filter: blur(2px);
+    height: 100%;
+}
+
+
+.about-us-content {
+    text-align: right;
+    position: absolute;
+    top: 3.75rem;
+    right: 0;
+    width: 28.125rem;
+    height: 22.4375rem;
+    padding-right: 3rem;
+    font-family: Nunito;   
+}
+
+.about-us-heading h2 {
+    background-color:#e1c171;
+    height: 4.75rem;
+    width: 100%;
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.875rem;
+    color: #fbfbfb;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.about-us-text p {
+    align-self: flex-end;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.5%;
+    line-height: 2.625rem;
+    margin-top: 2rem;
+}
+
+/* xxxxxxxxxx About Us ENDS xxxxxxxxxxx */
+
+/* xxxxxxxxxx Subscribe - Style Starts xxxxxxxxxxx */
+
+#subscribe-container {
+    height: 28rem;
+    background-color: #40374B;
+    width: 100%;
+}
+
+/* == Subscribe Headings == */
+
+.subscribe-headings {
+    font-family: Eczar;
+    color:#FBFBFB;
+    text-align: center;
+    line-height: 4rem;
+    display: block;
+    padding-top: 7.25rem;
+}
+
+.subscribe-headings h2 {
+    font-weight: 500;
+    font-size: 3.75rem;
+    width: 100%;
+}
+
+.subscribe-headings p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+/* == Subscribe Headings ENDS == */
+/* == Subscribe Form == */
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-form-container {
+    width: 57.5rem;
+    height: 4.25rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.subscribe-form-container button {
+    position: absolute;
+    right: 0;
+    background-color: #02C3A4;
+    border: 1px #02C3A4 solid;
+    width: 15.625rem ;
+    height: 3rem;
+    border-radius: 0 5px 5px 0;
+    color: #FBFBFB;
+    text-transform: uppercase;
+    font-family: Nunito;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+
+.subscribe-form-container input::placeholder {
+    color:#acacad;
+}
+
+.subscribe-form-container input[type=text] {
+    border: none;
+    border-radius: 5px;
+    width: 57.5rem;
+    height: 3rem;
+    font-family: Nunito;
+    font-size: 1.15rem;
+    color: #40374B;
+    padding-left: 17rem;
+}
+
+.subscribe-form-container input:focus {
+    outline-color: #02C3A4;
+}
+
+
+
+
+/* == Subscribe Form == */
+/* xxxxxxxxxx Subscribe - Style ENDS xxxxxxxxxxx */
+
+/* xxxxxxxx Footer Section - Style Starts xxxxxxxxx */
+
+#footer-container {
+    background-color: #f3f3f3;
+    height: 16.625rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5625rem 8.875rem 0 8.875rem;
+}
+
+.footer-left-heading h3,
+.footer-right-heading h3 {
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+.footer-left-list ul,
+.footer-right-list ul {
+    line-height: 1.5rem;
+}
+
+.footer-left-list li,
+.footer-right-list li {
+    list-style: none;
+    font-family: Nunito;
+    font-size: 0.8125rem;
+}
+
+.features a,
+.pages a {
+    color: #40374B;
+    text-decoration: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.features a:hover,
+.pages a:hover {
+    color: #d69346;
+    cursor: pointer;
+}
+
+
+.footer-left,
+.footer-right {
+    width: 8.3125rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    align-content: space-between;
+}
+/* == Footer Left Starts  == */
+
+
+
+.footer-left-heading {
+    
+}
+
+.social-media-container {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 1.4375rem;
+    padding: 0;
+}
+
+.social-media-container img {
+  
+    margin: 0;
+}
+
+.social-media-container a {
+    margin: 0;
+}
+
+/* == Footer Left Starts  == */
+/* == Footer Center Starts  == */
+
+.footer-center  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.footer-logo-container {
+    width: 100%;
+    align-self: flex-start;
+
+}
+
+.payment-options {
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.logo img {
+    width: 7.8125rem;
+    height: auto;
+}
+
+
+.cards img {
+    height: 1.64rem;
+    padding: 0 0.25rem;
+}
+
+
+/* == Footer Center ENDS  == */
+/* xxxxxxxx Footer Section - Style ENDS xxxxxxxxx */
+
+
+/* xxxxxxxx Footer Copyright - Style xxxxxxxxx */
+.copyright {
+    background-color: #02C3A4;
+    height: 3.4375rem;
+    line-height: 3.4375rem;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 0.75rem;
+    letter-spacing: 0.3px;
+    color: #FBFBFB;
+}
+
+
+/* xxxxxxxx Footer Copyright - Style ENDS xxxxxxxxx */
