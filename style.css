@@ -256,11 +256,10 @@ Hero
 *********************************/
 
 h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
     letter-spacing: 0.2rem;
     text-align: center;
 }
-
 
 
 .hero-container {
@@ -273,7 +272,7 @@ h1 {
     /* background-position: bottom ; */
     background-size: cover;
     width: 100%;   
-    height: 30rem;
+    height: 50rem;
     padding: 4rem 3rem;
 }
 
@@ -512,7 +511,78 @@ h1 {
 /****************************************/
 
 /********** About Us ************/
+
 #about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-wrapper {
+    height: 40rem;
+    width: 100;
+}
+
+.image-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 40rem;
+}
+
+.about-us-content {
+    padding: 5rem 3rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(133deg, rgba(255,255,255,1) 51%, rgba(242,244,244,1) 78%);
+    height: auto;
+    text-align: center;
+}
+
+
+    .about-us-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .about-us-content h2 {
+        display: none;
+    }
+
+
+    .about-us-content p {
+        font-size: 1.1rem;
+        width: 100%;
+        margin: 2rem 0;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .about-us-content .btn {
+        padding: 1.5rem 2.8rem;
+        margin-top: 1rem;
+    }
+
+
+
+
+/****************************************/
+
+@media (min-width: 375px) {
+    .about-us-content h3 {
+        font-size: 2rem;
+    }
+
+    .about-us-content p {
+        font-size: 1.2rem;
+        margin: 2.5rem 0;
+        line-height: 1.8;
+    }
+
+    .about-us-content .btn {
+        margin-top: 1.5rem;
+    }
+}
+
+
+
+/* #about-us {
     display: flex;
 }
 
@@ -540,7 +610,11 @@ h1 {
         width: 70%;
         margin: 2.5rem 0;
         line-height: 2;
-    }
+    } */
+
+
+
+
 
 /****************************************/
 

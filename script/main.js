@@ -5,3 +5,4 @@ function toggleHamburger() {
     document.getElementsByClassName('menu').classList.toggle('open');
 
 }
+
