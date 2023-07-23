@@ -519,7 +519,8 @@ h1 {
 
 .image-wrapper {
     height: 40rem;
-    width: 100;
+    width: 100%;
+    min-height: 100%;
 }
 
 .image-wrapper img {
@@ -580,37 +581,363 @@ h1 {
     }
 }
 
+@media (min-width: 521px) {
 
-
-/* #about-us {
-    display: flex;
-}
-
-    .image-wrapper {
-        flex: 0 0 30%;
-        display: flex;
+    .about-us-content {
+        padding: 5.5rem 4rem;
     }
-    
-    .image-wrapper img {
-        object-fit: cover;
-        max-height: 100%;
-        max-width: 100%;
-    }
-
-.about-us-content {
-    padding: 8rem 6rem;
-    background: rgb(255,255,255);
-    background: linear-gradient(133deg, rgba(255,255,255,1) 51%, rgba(242,244,244,1) 78%);
-    height: 100%;
-}
-
 
     .about-us-content p {
+        font-size: 1.3rem;
+    }
+
+    .about-us-content .btn {
+        margin-top: 1.5rem;
         font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    #about-us {
+        flex-direction: row;
+        height: auto;
+    }
+    
+        .image-wrapper {
+            flex: 0 0 30%;
+            display: flex;
+            height: auto;
+        }
+        
+        .image-wrapper img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            max-height: 100%;
+        }
+    
+    
+    .article-wrapper {
         width: 70%;
-        margin: 2.5rem 0;
-        line-height: 2;
-    } */
+        height: auto;
+    }
+    
+
+    .about-us-content {
+        text-align: left;
+        padding: 4.5rem 5rem 4.5rem 4rem;
+        height: 100%;
+    }
+
+        .about-us-content h3 {
+            font-size: 1.5rem;
+        }
+
+        .about-us-content p {
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+        }
+
+        .about-us-content .btn {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+            height: auto;
+        }        
+}
+
+
+@media (min-width: 905px) {
+    .about-us-content {
+        padding: 5rem 6rem 4.5rem 4rem;
+    }
+
+        .about-us-content h3 {
+            font-size: 1.2rem;
+        }
+
+        .about-us-content .btn {
+            padding: 1.3rem 2.2rem;
+        }        
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .about-us-content {
+        padding: 6rem 7rem 5rem 5rem;
+    }
+
+    .about-us-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-us-content p {
+        margin-top: 2rem;
+        line-height: 1.8;
+        letter-spacing: 0.05rem;
+    }
+
+    .about-us-content .btn {
+        padding: 1.3rem 2.2rem;
+    }        
+}
+
+
+@media (min-width: 1115px) {
+
+    .about-us-content {
+        padding: 6rem 5rem;
+    }
+
+    .about-us-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-us-content p {
+        font-size: 1.3rem;
+    }
+
+    .about-us-content .btn {
+        padding: 1.5rem 2.5rem;
+    }        
+}
+
+
+@media (min-width: 1140px) {
+
+    .about-us-content {
+        padding: 6rem 5rem;
+    }
+
+    .about-us-content h3 {
+        font-size: 1.5rem;
+    }
+     
+}
+
+
+@media (min-width: 1180px) {
+
+    .about-us-content {
+        padding: 6.2rem 5.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .about-us-content p {
+        margin-bottom: 0;
+        font-size: 1.3rem;
+    }
+
+    .about-us-content .btn {
+        width: 15rem;
+        margin-top: 3rem;
+    }        
+}
+
+
+@media (min-width: 1195px) {
+
+    .about-us-content {
+        padding: 6.5rem 10rem 6.5rem 6rem;
+    }
+
+    .about-us-content h3 {
+        font-size: 1.55rem;
+    }
+
+    .about-us-content .btn {
+        padding: 1.7rem 2.5rem;
+        width: 16rem;
+        margin-top: 3.5rem;
+    }        
+}
+
+
+
+@media (min-width: 1305px) {
+
+    .about-us-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .about-us-content p {
+        font-size: 1.4rem;
+    }
+
+    .about-us-content .btn {
+        padding: 1.7rem 2.5rem;
+        width: 16rem;
+        font-size: 1.4rem;
+    }        
+}
+
+
+@media (min-width: 1373px) {
+
+    .about-us-content {
+        padding: 7.5rem 12rem 7.5rem 6rem;
+    }
+}
+
+@media (min-width: 1410px) {
+
+    .about-us-content {
+        padding: 7.5rem 12rem 7.5rem 6rem;
+    }
+
+        .about-us-content h3 {
+            font-size: 1.8rem;
+        }
+
+        .about-us-content p {
+            margin-top: 3rem;
+            font-size: 1.5rem;
+        }
+
+        .about-us-content .btn {
+            font-size: 1.5rem;
+            margin-top: 4rem;
+            padding: 2rem;
+            width: 18rem;
+        }
+}
+
+
+@media (min-width: 1440px) {
+
+    .about-us-content p {
+        font-size: 1.55rem;
+    }
+
+    .about-us-content .btn {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (min-width: 1525px) {
+
+    .about-us-content h3 {
+        font-size: 2rem;
+    }
+
+    .about-us-content p {
+        font-size: 1.65rem;
+    }
+}
+
+
+@media (min-width: 1605px) {
+
+    .about-us-content {
+        padding: 8rem 13rem 8rem 6rem;
+    }
+
+    .about-us-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .about-us-content p {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media (min-width: 1680px) {
+
+    .about-us-content p {
+        font-size: 1.8rem;
+    }
+
+    .about-us-content .btn {
+        width: 19rem;
+        padding: 2.2rem;
+        font-size: 1.7rem;
+    }
+}
+
+
+@media (min-width: 1731px) {
+
+    .about-us-content {
+        padding-right: 15rem;
+        padding-left: 7rem;
+    }
+
+        .about-us-content p {
+            font-size: 1.8rem;
+            margin-top: 4rem;
+        }
+
+        .about-us-content .btn {
+            width: 19rem;
+            padding: 2.2rem;
+            font-size: 1.7rem;
+        }
+}
+
+@media (min-width: 1776px) {
+
+    .about-us-content {
+    }
+
+        .about-us-content p {
+            font-size: 1.8rem;
+            margin-top: 3.5rem;
+        }
+
+        .about-us-content .btn {
+            width: 19rem;
+            padding: 2.2rem;
+            font-size: 1.7rem;
+        }
+}
+
+
+@media (min-width: 1819px) {
+
+    .about-us-content {
+        padding-left: 7.5rem;
+    }
+
+        .about-us-content p {
+            font-size: 1.9rem;
+            margin-top: 4rem;
+        }
+
+        .about-us-content .btn {
+            width: 20rem;
+            font-size: 1.8rem;
+            margin-top: 4.5rem;
+        }
+}
+
+
+@media (min-width: 1915px) {
+
+    .about-us-content {
+        padding-left: 8rem;
+    }
+
+        .about-us-content h3 {
+            font-size: 2.3rem;
+        }
+
+        .about-us-content p {
+            font-size: 2rem;
+            margin-top: 4.5rem;
+        }
+
+        .about-us-content .btn {
+            margin-top: 4.8rem;
+        }
+}
 
 
 
