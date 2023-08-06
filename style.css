@@ -1337,3 +1337,13 @@ footer p {
     .footer-right p {
         line-height: 1.8;
     }
+
+
+
+
+
+
+    .test {
+        display: flex;
+        justify-content: space-between;
+    }
